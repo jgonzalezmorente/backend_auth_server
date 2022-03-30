@@ -4,8 +4,7 @@ const CLIENT_ID = '626541427885-9ol8e2k3gl280au5u52g79k62m0kr0i9.apps.googleuser
 
 const client = new OAuth2Client(CLIENT_ID);
 
-const validarGoogleIdToken = async (token) => {
-
+const validarGoogleIdToken = async (token) => {    
     try {
         
         const ticket = await client.verifyIdToken({
